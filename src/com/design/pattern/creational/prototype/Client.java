@@ -4,7 +4,7 @@ import javafx.geometry.Point3D;
 
 public class Client {
 
-    public static void main(String[] args) throws CloneNotSupportedException{
+    public static void main(String[] args) throws CloneNotSupportedException {
 
         SowrdMen sowrdMen = new SowrdMen();
         sowrdMen.move(new Point3D(10, 20, 30), 50.25);
