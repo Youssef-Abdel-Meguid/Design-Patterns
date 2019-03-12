@@ -1,5 +1,4 @@
 package com.design.pattern.creational.builder;
-
 import java.time.LocalDate;
 import java.time.Period;
 
@@ -33,6 +32,7 @@ public class UserDTOWebBuilder implements UserDTOBuilder {
 	public UserDTOBuilder withBirthday(LocalDate birthday) {
 		Period ageInYears = Period.between(birthday, LocalDate.now());
 		age = Integer.toString(ageInYears.getYears());
+
 		return this;
 	}
 
